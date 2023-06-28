@@ -36,7 +36,6 @@ Preprocessing, Post processing.
 
 ```python
 
-
 from proxy.login_password_vault_proxy import LoginPasswordVaultProxy
 
 login_proxy = LoginPasswordVaultProxy()
