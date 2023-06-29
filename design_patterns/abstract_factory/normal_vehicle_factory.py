@@ -10,6 +10,6 @@ class NormalVehicleFactory(AbstractVehicleFactory):
         match vehicle_name:
             case "car":
                 return Car()
-            
+
             case "bike":
                 return Bike()

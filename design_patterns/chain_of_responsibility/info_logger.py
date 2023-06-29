@@ -7,4 +7,3 @@ class InfoLogger(BaseLogger):
             return f"{log_type}: {log_message}"
         else:
             return super().handle(log_type, log_message)
-

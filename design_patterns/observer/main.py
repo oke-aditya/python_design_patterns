@@ -7,6 +7,3 @@ if __name__ == "__main__":
 
     email_observable.register(phone_observer)
     email_observable.logic()
-
-
-

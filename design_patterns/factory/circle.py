@@ -5,7 +5,7 @@ class Circle(Shape):
     def __init__(self, r=7) -> None:
         super().__init__()
         self.r = r
-    
+
     def draw(self):
         return "Drawing a Circle"
 

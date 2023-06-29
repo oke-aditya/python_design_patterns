@@ -4,6 +4,7 @@ from abstract_factory.luxury_vehicle_factory import LuxuryVehicleFactory
 
 ## This follow abstract factory pattern, this returns is a factory of factories.
 
+
 class VehicleFactory:
     def get_vehicle_factory(vehicle_factory_name: str) -> AbstractVehicleFactory:
         match vehicle_factory_name:
@@ -11,4 +12,3 @@ class VehicleFactory:
                 return NormalVehicleFactory
             case "luxury":
                 return LuxuryVehicleFactory
-

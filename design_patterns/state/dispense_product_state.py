@@ -7,10 +7,12 @@ if TYPE_CHECKING:
 
 
 class DispenseProductState(VendingState):
-    def dispense_product(self, vending_machine: 'VendingMachine', product_code: str) -> None:
+    def dispense_product(
+        self, vending_machine: "VendingMachine", product_code: str
+    ) -> None:
         # Remove that product from vending machine
         product_popped = vending_machine.inventory.pop(product_code)
 
         from state.idle_state import IdleState
-        vending_machine.set_vending_machine_state(IdleState(vending_machine))
 
+        vending_machine.set_vending_machine_state(IdleState(vending_machine))

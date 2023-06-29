@@ -5,4 +5,3 @@ class BasePizza(ABC):
     @abstractmethod
     def cost(self) -> float:
         pass
-

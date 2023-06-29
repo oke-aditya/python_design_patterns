@@ -13,7 +13,6 @@ class EmailObservable(BaseObservable):
     subscribers, is stored in this variable.
     """
 
-
     _state: int = 0
 
     """
@@ -22,11 +21,11 @@ class EmailObservable(BaseObservable):
     """
 
     _observers: list[BaseObserver] = []
-    
-    def register(self, observer: BaseObservable) -> None:
+
+    def register(self, observer: BaseObserver) -> None:
         self._observers.append(observer)
-    
-    def remove(self, observer: BaseObservable) -> None:
+
+    def remove(self, observer: BaseObserver) -> None:
         self._observers.remove(observer)
 
     def notify(self) -> None:
@@ -37,12 +36,11 @@ class EmailObservable(BaseObservable):
         self._state = 0
         print(f"Resetting the state after notifying new state = {self._state}")
 
-    
     """
     Functionality that this observable has to do.
     """
+
     def logic(self) -> None:
         print("Recieved data, hence updating the state")
         self._state = 3
         self.notify()
-

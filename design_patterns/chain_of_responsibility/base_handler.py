@@ -10,4 +10,3 @@ class BaseHandler(ABC):
     @abstractmethod
     def handle(self, log_type: str, log_message: str) -> str:
         pass
-

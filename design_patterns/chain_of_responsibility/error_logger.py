@@ -6,4 +6,4 @@ class ErrorLogger(BaseLogger):
         if log_type == "ERROR":
             return f"{log_type}: {log_message}"
         else:
-            return super().handle(log_type, log_message)    
+            return super().handle(log_type, log_message)

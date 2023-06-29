@@ -5,4 +5,3 @@ class DriveStrategy(ABC):
     @abstractmethod
     def drive() -> str:
         pass
-

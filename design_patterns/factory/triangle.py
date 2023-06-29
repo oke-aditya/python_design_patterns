@@ -7,7 +7,6 @@ class Traingle(Shape):
         self.b = b
         self.h = h
 
-
     def draw(self):
         return "Drawing a triangle"
 
@@ -17,6 +16,5 @@ class Traingle(Shape):
 
 if __name__ == "__main__":
     traingle = Traingle(10, 10)
-    #print(traingle.draw())
+    # print(traingle.draw())
     print(traingle.area())
-

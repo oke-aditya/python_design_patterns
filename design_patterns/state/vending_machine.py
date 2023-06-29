@@ -9,19 +9,17 @@ if TYPE_CHECKING:
 class VendingMachine:
     vending_state = None
     inventory = INVENTORY
-    coins : list[int] = []
-        
+    coins: list[int] = []
 
     def get_vending_machine_state(self) -> "VendingState":
         return self.vending_state
-    
 
     def set_vending_machine_state(self, vending_state: "VendingState") -> None:
         self.vending_state = vending_state
 
     def set_coins(self, coins: list[int]) -> None:
         self.coins = coins
-    
+
     def get_coins(self) -> list[int]:
         return self.coins
 

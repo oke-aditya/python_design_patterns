@@ -1,6 +1,9 @@
 from abc import ABC, abstractmethod
 
-from observer.base_observers import BaseObservable 
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from observer.base_observers import BaseObserver
 
 
 class BaseObservable(ABC):
@@ -9,16 +12,13 @@ class BaseObservable(ABC):
     """
 
     @abstractmethod
-    def register(self, observer: BaseObservable) -> None:
-        pass
-    
-    @abstractmethod
-    def remove(self, observer: BaseObservable) -> None:
+    def register(self, observer: "BaseObserver") -> None:
         pass
 
+    @abstractmethod
+    def remove(self, observer: "BaseObserver") -> None:
+        pass
 
     @abstractmethod
     def notify(self) -> None:
         pass
-
-
