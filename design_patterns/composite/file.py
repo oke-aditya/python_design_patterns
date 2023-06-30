@@ -6,4 +6,4 @@ class File(BaseFileSystem):
         self.name = name
 
     def ls(self) -> None:
-        print(f"{self.name}")
+        print(f"\t - {self.name}")
