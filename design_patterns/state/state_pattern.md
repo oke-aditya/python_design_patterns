@@ -39,6 +39,6 @@ We first need to draw the state diagram for any given task.
 Once we have the state diagram and clear requirements we can proceed to designing the classes.
 
 
-![Vending Machine Diagram](../images/vending_machine_state_diagram.png)
+![Vending Machine Diagram](../..//images/vending_machine_state_diagram.png)
 
 
