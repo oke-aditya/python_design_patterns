@@ -1,9 +1,10 @@
-from typing import TYPE_CHECKING
+# from typing import TYPE_CHECKING
 
-if TYPE_CHECKING:
-    from builder.base_student_builder import BaseStudentBuilder
-    from builder.engineering_student_builder import EngineeringStudentBuilder
-    from builder.mba_student_builder import MBAStudentBuilder
+from builder.base_student_builder import BaseStudentBuilder
+
+# if TYPE_CHECKING:
+from builder.engineering_student_builder import EngineeringStudentBuilder
+from builder.mba_student_builder import MBAStudentBuilder
 
 
 class Director:
