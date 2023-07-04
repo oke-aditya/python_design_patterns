@@ -5,9 +5,8 @@ if TYPE_CHECKING:
 
 
 class Student:
-    def __init__(self, student_builder: 'BaseStudentBuilder') -> None:
+    def __init__(self, student_builder: "BaseStudentBuilder") -> None:
         self.roll_no = student_builder.roll_no
         self.age = student_builder.age
         self.name = student_builder.name
         self.subjects = student_builder.subjects
-
