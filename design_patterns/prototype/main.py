@@ -8,5 +8,3 @@ if __name__ == "__main__":
     print(st_clone.age)
     print(st_clone.roll_no)
     print(st_clone.school)
-
-

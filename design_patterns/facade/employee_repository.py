@@ -10,4 +10,3 @@ class EmployeeRepositry:
     def get_employee_details():
         # Gets employee details
         pass
-    
