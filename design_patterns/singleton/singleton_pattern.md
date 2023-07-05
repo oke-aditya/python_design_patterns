@@ -29,6 +29,9 @@ single database object shared by different parts of the program.
 
 Use the Singleton pattern when you need stricter control over global variables.
 
+1. DB Connection.
+2. Single Global Object for all transactions.
+
 # Example
 
 ```python
