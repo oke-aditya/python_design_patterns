@@ -28,6 +28,15 @@ A flyweight should initialize its state just once, via constructor parameters. I
 
 ```python
 
+from flyweight.letter_factory import LetterFactory
 
+lt = LetterFactory.create_character('a')
+lt.display(0, 0)
+
+lt2 = LetterFactory.create_character('a')
+lt2.display(0, 0)
+
+lt3 = LetterFactory.create_character('b')
+lt3.display(0, 0)
 
 ```
