@@ -1,6 +1,7 @@
 # This factory is crucial cache for Flyweight pattern
 from flyweight.editor_flyweight import EditorFlyWeight
 
+
 class LetterFactory:
     character_cache = {}
 
@@ -13,6 +14,3 @@ class LetterFactory:
             editor_flyweight = EditorFlyWeight(char, font_type="Arial", size=10)
             LetterFactory.character_cache[char] = editor_flyweight
             return editor_flyweight
-
-
-
