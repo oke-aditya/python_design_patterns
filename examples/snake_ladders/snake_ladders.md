@@ -13,7 +13,7 @@ Game is fixed for now from 0 -> 100
 
 One way to do it is using classes by creating class for Board, Dice, Players, Interface for snakes ladders, etc.
 
-![Snake and Ladders](<snake ladders UML.png>)
+![Snake and Ladders](<../../images/snake ladders UML.png>)
 
 
 Other way is to create functions and simulate the game
