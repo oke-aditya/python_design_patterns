@@ -6,7 +6,7 @@ from collections import deque
 
 
 def play_game(size: int) -> None:
-    #board = TicTacToeBoard.initialize_empty(size=3)
+    # board = TicTacToeBoard.initialize_empty(size=3)
     board = TicTacToeBoard(size=size)
     board.print_board()
 
@@ -18,9 +18,11 @@ def play_game(size: int) -> None:
 
     winner = False
 
-    while(not winner):
+    while not winner:
         current_player = players.popleft()
-        print(f"Current turn {current_player.name}: Piece to Play: {current_player.piece_type}")
+        print(
+            f"Current turn {current_player.name}: Piece to Play: {current_player.piece_type}"
+        )
 
         row = int(input("Enter the row no to insert: "))
         col = int(input("Enter the col no to insert: "))
@@ -28,13 +30,13 @@ def play_game(size: int) -> None:
         if board.add_piece(row, col, piece=current_player.piece_type):
             print("Piece placed")
             board.print_board()
-    
+
             if board._check_winner():
                 print(f"Winner Winner Chicken Dinner!!! {current_player.name}")
                 winner = True
 
             players.append(current_player)
-        
+
         else:
             print("Failed to add the piece already occupied")
             board.print_board()

@@ -8,4 +8,3 @@ class Player:
 
     def __str__(self) -> str:
         print(f"Player name {self.name} and Piece Type {self.piece_type}")
-
