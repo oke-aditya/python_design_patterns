@@ -7,6 +7,5 @@ class TurnOnAC(BaseCommand):
 
     def execute(self) -> None:
         self.ac.turn_on()
-        
     def undo(self) -> None:
         self.ac.turn_off()

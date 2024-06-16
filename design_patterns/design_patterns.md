@@ -17,7 +17,6 @@ Provide object creation mechanisms that increase flexibility and reuse of existi
 
 Explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient.
 
-
 1. Adapter
 2. Bridge
 3. Composite
