@@ -5,7 +5,6 @@ from command.ac import AirConditioner
 class TurnOfAc(BaseCommand):
     def __init__(self, ac: AirConditioner) -> None:
         self.ac = ac
-
     def execute(self) -> None:
         self.ac.turn_off()
 
