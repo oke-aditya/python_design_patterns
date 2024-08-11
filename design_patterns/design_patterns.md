@@ -2,7 +2,7 @@
 
 Three types
 
-1. Creational patterns 
+### Creational patterns 
 
 Provide object creation mechanisms that increase flexibility and reuse of existing code.
 
@@ -12,7 +12,7 @@ Provide object creation mechanisms that increase flexibility and reuse of existi
 4. Prototype
 5. Singleton
 
-2. Structural patterns 
+### Structural patterns 
 
 
 Explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient.
@@ -25,7 +25,7 @@ Explain how to assemble objects and classes into larger structures, while keepin
 6. Flyweight
 7. Proxy
 
-3. Behavioral Patterns 
+### Behavioral Patterns 
 
 Take care of effective communication and the assignment of responsibilities between objects.
 
@@ -39,4 +39,4 @@ Take care of effective communication and the assignment of responsibilities betw
 8. Strategy
 9. Template Method
 10. Visitor
-
+11. Interpreter
