@@ -5,7 +5,7 @@ from memento.text_editor import TextEditor
 if __name__ == "__main__":
     text_editor = TextEditor()
 
-    text_editor.type("Hello")    
+    text_editor.type("Hello")
     text_editor.type("World")
 
     print(f"Current Text: {text_editor.get_text()}")
