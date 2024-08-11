@@ -1,13 +1,13 @@
 from template.template_report_generator import TemplateReportGenerator
 
 
-class PDFReportGenerator(TemplateReportGenerator):
+class WordReportGenerator(TemplateReportGenerator):
 
     def add_header(self) -> None:
-        print("Adding PDF Header")
+        print("Adding word header")
 
     def add_content(self) -> None:
-        print("Adding PDF content")
+        print("Adding word header")
 
     def add_footer(self) -> None:
-        print("Adding PDF Footer")
+        print("Adding footer")
