@@ -3,9 +3,9 @@ from abc import ABC, abstractmethod
 
 class Shape(ABC):
     @abstractmethod
-    def draw() -> str:
+    def draw(self) -> str:
         pass
 
     @abstractmethod
-    def area() -> float:
+    def area(self) -> float:
         pass
