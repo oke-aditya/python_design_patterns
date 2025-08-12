@@ -27,23 +27,18 @@ PARKING_SLOTS = [
     },    
 ]
 
+
 from abc import ABC, abstractmethod
+from .parking_spot import ParkingSpot
+from typing import Optional
 
 # For now assume we do have this grid let's implement parking floor then
 class BaseParkingStrategy(ABC):
-    def __init__(self, parking_slots: list[dict]) -> None:
-        self.parking_slots = parking_slots
-    
-    @abstractmethod
-    def park(self) -> None:
-        pass
-    
-    @abstractmethod
-    def unpark(self, slot: dict[str, str]) -> None:
-        pass
+    def __init__(self, parking_spots: list[ParkingSpot]) -> None:
+        self.parking_spots = parking_spots
 
     @abstractmethod
     # Should return relevant spot info
-    def find_parking_spot(self, vehicle) -> dict[str, str]:
+    def find_parking_spot(self, vehicle) -> Optional[ParkingSpot]:
         pass
     
