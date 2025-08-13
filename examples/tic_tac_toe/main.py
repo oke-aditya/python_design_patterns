@@ -14,7 +14,8 @@ def play_game(size: int) -> None:
     p2 = Player(name="p2", piece_type=PieceType.O)
 
     players: deque[Player] = deque()
-    players.append(p1, p2)
+    players.append(p1)
+    players.append(p2)
 
     winner = False
 
