@@ -1,5 +1,5 @@
-from .base_vehicle import BaseVehicle
-from .common_enums import VehicleType
+from parking_lot.base_vehicle import BaseVehicle
+from parking_lot.common_enums import VehicleType
 
 
 class Car(BaseVehicle):

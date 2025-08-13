@@ -1,4 +1,4 @@
-from .common_enums import StatusEnum
+from parking_lot.common_enums import StatusEnum
 
 class ParkingSpot:
     def __init__(self, slot, vehicle_type, status, floor) -> None:

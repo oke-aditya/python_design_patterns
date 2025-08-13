@@ -3,33 +3,33 @@
 # Maybe we can map these or maintiain a stucture like this
 # [['Slot': 'VehicleType'], [['Slot': 'VehicleType']], [['Slot': 'VehicleType']]]
 # Say this comes from a JSON that can be stored and fetched
+# This is abstracted to ParkingSpot Class
+# PARKING_SLOTS = [
+#     {
+#         "Slot": "",
+#         "VehicleType": "",
+#         "Status": "",
+#         "Floor": "",
+#     },
 
-PARKING_SLOTS = [
-    {
-        "Slot": "",
-        "VehicleType": "",
-        "Status": "",
-        "Floor": "",
-    },
-
-    {
-        "Slot": "",
-        "VehicleType": "",
-        "Status": "",
-        "Floor": "",
-    },
+#     {
+#         "Slot": "",
+#         "VehicleType": "",
+#         "Status": "",
+#         "Floor": "",
+#     },
     
-    {
-        "Slot": "",
-        "VehicleType": "",
-        "Status": "",
-        "Floor": "",
-    },    
-]
+#     {
+#         "Slot": "",
+#         "VehicleType": "",
+#         "Status": "",
+#         "Floor": "",
+#     },    
+# ]
 
 
 from abc import ABC, abstractmethod
-from .parking_spot import ParkingSpot
+from parking_lot.parking_spot import ParkingSpot
 from typing import Optional
 
 # For now assume we do have this grid let's implement parking floor then

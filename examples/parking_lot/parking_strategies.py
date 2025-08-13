@@ -1,6 +1,6 @@
-from .parking_spot import ParkingSpot
-from .base_parking_strategy import BaseParkingStrategy
-from .common_enums import StatusEnum
+from parking_lot.parking_spot import ParkingSpot
+from parking_lot.base_parking_strategy import BaseParkingStrategy
+from parking_lot.common_enums import StatusEnum
 from typing import Optional
 
 class BestFirstParkingStrategy(BaseParkingStrategy):
