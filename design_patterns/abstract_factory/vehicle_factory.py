@@ -6,6 +6,7 @@ from abstract_factory.luxury_vehicle_factory import LuxuryVehicleFactory
 
 
 class VehicleFactory:
+    @staticmethod
     def get_vehicle_factory(vehicle_factory_name: str) -> AbstractVehicleFactory:
         match vehicle_factory_name:
             case "normal":

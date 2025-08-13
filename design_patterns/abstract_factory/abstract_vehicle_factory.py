@@ -3,5 +3,6 @@ from abstract_factory.base_vehicle import BaseVehicle
 
 
 class AbstractVehicleFactory(ABC):
+    @staticmethod
     def get_vehicle(vehicle_name: str) -> BaseVehicle:
         pass
