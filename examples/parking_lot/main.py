@@ -7,7 +7,7 @@ if __name__ == "__main__":
 
     # Create few spots for parking
     print("hi")
-    
+
     # We can probably create many of these parking spots
     parking_spot1 = ParkingSpot("A", VehicleType.CAR, StatusEnum.AVAILABLE, floor=1)
     parking_spot2 = ParkingSpot("B", VehicleType.BUS, StatusEnum.AVAILABLE, floor=1)
@@ -22,6 +22,13 @@ if __name__ == "__main__":
     bike1 = Bike("DEF")
     bus1 = Bus("XYZ")
 
-    spot = bfs.find_parking_spot(car1)
+    spot: ParkingSpot = bfs.find_parking_spot(car1)
     print(spot.slot, spot.status, spot.vehicle_type)
+
+    # This might need a multi threaded control here, given 2 people trying to book a slot
+    spot.book_slot()
+
+    spot2: ParkingSpot = bfs.find_parking_spot(car1)
+    print(spot2.slot, spot2.status, spot2.vehicle_type)
+
 
